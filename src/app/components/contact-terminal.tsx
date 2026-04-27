@@ -242,7 +242,7 @@ export function ContactTerminal() {
           className="mt-8 flex justify-center gap-6"
         >
           <motion.a
-            href="https://github.com/gana36"
+            href="https://github.com/sgakula"
             whileHover={{ scale: 1.1, y: -2 }}
             className="px-4 py-2 bg-foreground/5 hover:bg-[#2E5BFF]/10 border border-white/10 hover:border-[#2E5BFF]/30 rounded-lg transition-colors"
             style={{ fontFamily: 'var(--font-mono)' }}

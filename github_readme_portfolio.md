@@ -81,13 +81,13 @@
 
 ## 📌 Featured Projects
 
-- **[Procheck](https://github.com/gana36/procheck)** — hybrid AI medical protocol search combining Elasticsearch BM25 + Gemini semantic vectors · `React · FastAPI · Firebase · Gemini` · [Live](https://procheck-app.web.app) · [Demo](https://youtu.be/QS8evOeT4SM)
-- **[VidMod](https://github.com/gana36/VidMod)** — autonomous video compliance agent using Gemini 3.0 with 1M+ token context for full-video temporal reasoning · `Gemini 3.0 · FastAPI · React · FFmpeg` · [Demo](https://youtu.be/Yl4bevvtUls)
-- **[CryptoStreamML](https://github.com/gana36/CryptoStreamML)** — real-time crypto prediction pipeline with Kafka streaming, A/B champion/challenger models, drift detection & Grafana dashboards · `Kafka · MLflow · InfluxDB · Docker`
-- **[Flight Price Estimation](https://github.com/gana36/flight-price-estimation)** — production MLOps pipeline achieving R² of 0.98 deployed on AWS ECS · `Random Forest · FastAPI · Docker · AWS`
-- **[Manus](https://github.com/gana36/Jarvis)** — production voice assistant with 99.9% uptime via Google Cloud + Gemini · `Gemini 2.0 · FastAPI · React · Qdrant` · [Demo](https://youtu.be/c2WNQVV0zQ0)
-- **[CaseTwin](https://github.com/gana36/case-twin)** — clinical intelligence platform collapsing a 4-hour medical referral workflow to ~5 minutes; chest X-ray analysis, case matching, agentic hospital routing & auto referral generation · `MedGemma · CrewAI · Gemini 2.5 · FastAPI · Qdrant` · **Agentic Workflow Prize 1 @ Google × Kaggle**
-- **[Rift Rewind](https://github.com/gana36/LeagueOfLegends_AICoach)** — personalized League of Legends recaps using Amazon Bedrock Claude 3 Sonnet · `React · Bedrock · DynamoDB` · [Demo](https://youtu.be/WIV69NMOUNE)
+- **[Procheck](https://github.com/sgakula/procheck)** — hybrid AI medical protocol search combining Elasticsearch BM25 + Gemini semantic vectors · `React · FastAPI · Firebase · Gemini` · [Live](https://procheck-app.web.app) · [Demo](https://youtu.be/QS8evOeT4SM)
+- **[VidMod](https://github.com/sgakula/VidMod)** — autonomous video compliance agent using Gemini 3.0 with 1M+ token context for full-video temporal reasoning · `Gemini 3.0 · FastAPI · React · FFmpeg` · [Demo](https://youtu.be/Yl4bevvtUls)
+- **[CryptoStreamML](https://github.com/sgakula/CryptoStreamML)** — real-time crypto prediction pipeline with Kafka streaming, A/B champion/challenger models, drift detection & Grafana dashboards · `Kafka · MLflow · InfluxDB · Docker`
+- **[Flight Price Estimation](https://github.com/sgakula/flight-price-estimation)** — production MLOps pipeline achieving R² of 0.98 deployed on AWS ECS · `Random Forest · FastAPI · Docker · AWS`
+- **[Manus](https://github.com/sgakula/Jarvis)** — production voice assistant with 99.9% uptime via Google Cloud + Gemini · `Gemini 2.0 · FastAPI · React · Qdrant` · [Demo](https://youtu.be/c2WNQVV0zQ0)
+- **[CaseTwin](https://github.com/sgakula/case-twin)** — clinical intelligence platform collapsing a 4-hour medical referral workflow to ~5 minutes; chest X-ray analysis, case matching, agentic hospital routing & auto referral generation · `MedGemma · CrewAI · Gemini 2.5 · FastAPI · Qdrant` · **Agentic Workflow Prize 1 @ Google × Kaggle**
+- **[Rift Rewind](https://github.com/sgakula/LeagueOfLegends_AICoach)** — personalized League of Legends recaps using Amazon Bedrock Claude 3 Sonnet · `React · Bedrock · DynamoDB` · [Demo](https://youtu.be/WIV69NMOUNE)
 
 ---
 
@@ -130,19 +130,19 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=gana36&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gana36&theme=tokyonight"/>
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=sgakula&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+  <img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sgakula&theme=tokyonight"/>
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=gana36&theme=tokyonight&hide_border=true"/>
+  <img src="https://streak-stats.demolab.com?user=sgakula&theme=tokyonight&hide_border=true"/>
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=gana36&color=blueviolet&style=flat-square&label=Profile+Views"/>
-  <img src="https://img.shields.io/github/followers/gana36?style=social"/>
+  <img src="https://komarev.com/ghpvc/?username=sgakula&color=blueviolet&style=flat-square&label=Profile+Views"/>
+  <img src="https://img.shields.io/github/followers/sgakula?style=social"/>
   <br/><br/>
   <i>no neural networks were harmed in the making of this profile</i>
 </div>

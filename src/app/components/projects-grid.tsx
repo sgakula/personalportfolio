@@ -25,7 +25,7 @@ const projects: Project[] = [
       'Autonomous video compliance agent using Gemini 3.0 to detect and remediate content violations with five AI-powered actions: blur, pixelate, replace, dub, and beep. Full-video temporal reasoning via 1M+ token context.',
     tech: ['Gemini 3.0', 'FastAPI', 'React', 'FFmpeg'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/VidMod',
+    github: 'https://github.com/sgakula/VidMod',
     youtube: 'https://youtu.be/Yl4bevvtUls',
     readmeRepo: 'VidMod',
   },
@@ -35,7 +35,7 @@ const projects: Project[] = [
       'Full-stack medical protocol search platform with hybrid AI search engine combining Elasticsearch BM25 with Google Gemini semantic vectors.',
     tech: ['React', 'FastAPI', 'Firebase', 'Gemini'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/procheck/',
+    github: 'https://github.com/sgakula/procheck/',
     youtube: 'https://youtu.be/QS8evOeT4SM',
     demo: 'https://procheck-app.web.app/',
     readmeRepo: 'procheck',
@@ -46,7 +46,7 @@ const projects: Project[] = [
       'Production-ready MLOps pipeline for Indian flight price prediction achieving R² of 0.98. Deployed on AWS ECS.',
     tech: ['Random Forest', 'FastAPI', 'Docker', 'AWS'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/flight-price-estimation',
+    github: 'https://github.com/sgakula/flight-price-estimation',
     imageURL: 's3urlimageflightpriceestimation',
     readmeRepo: 'flight-price-estimation',
   },
@@ -56,7 +56,7 @@ const projects: Project[] = [
       'Production voice assistant processing natural language through Google Cloud and Gemini AI with 99.9% uptime.',
     tech: ['Gemini 2.0', 'FastAPI', 'React', 'Qdrant'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/Jarvis',
+    github: 'https://github.com/sgakula/Jarvis',
     youtube: 'https://youtu.be/c2WNQVV0zQ0',
     readmeRepo: 'Jarvis',
   },
@@ -66,7 +66,7 @@ const projects: Project[] = [
       'Group decision-making app combining Gemini 2.0 multimodal API with Yelp Fusion to give intelligent restaurant recommendations.',
     tech: ['React 19', 'TypeScript', 'Firestore', 'AWS'],
     span: 'col-span-1 md:col-span-2 row-span-1',
-    github: 'https://github.com/gana36/YELPB',
+    github: 'https://github.com/sgakula/YELPB',
     youtube: 'https://youtu.be/0NWjm0Mo3k0',
     readmeRepo: 'YELPB',
   },
@@ -76,7 +76,7 @@ const projects: Project[] = [
       'App delivering personalized year-end recaps and match analysis by integrating Amazon Bedrock Claude 3 Sonnet AI.',
     tech: ['React 18', 'Bedrock', 'DynamoDB'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/LeagueOfLegends_AICoach',
+    github: 'https://github.com/sgakula/LeagueOfLegends_AICoach',
     youtube: 'https://youtu.be/WIV69NMOUNE',
     readmeRepo: 'LeagueOfLegends_AICoach',
   },
@@ -86,7 +86,7 @@ const projects: Project[] = [
       'End-to-end ETL pipeline orchestrating data validation, weather API integration and ML training using Airflow.',
     tech: ['Airflow', 'Docker', 'PostgreSQL'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/taxi-weather-analytics',
+    github: 'https://github.com/sgakula/taxi-weather-analytics',
     imageURL: 's3urlimagetaxiweatheranalytics',
     readmeRepo: 'taxi-weather-analytics',
   },
@@ -96,7 +96,7 @@ const projects: Project[] = [
       'Clinical intelligence platform collapsing a 4-hour medical referral workflow to ~5 minutes. Combines chest X-ray analysis via MedGemma, case matching with MedSiglip embeddings, agentic hospital routing, and auto-generated referral memos. Won Agentic Workflow Prize 1 at the Google × Kaggle Med-Gemma Impact Challenge.',
     tech: ['MedGemma', 'CrewAI', 'Gemini 2.5', 'FastAPI', 'Qdrant'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/case-twin',
+    github: 'https://github.com/sgakula/case-twin',
     youtube: 'https://youtu.be/7vBo-Qunr3o',
     readmeRepo: 'case-twin',
   },
@@ -106,7 +106,7 @@ const projects: Project[] = [
       'Real-time crypto price prediction pipeline streaming from CoinGecko via Apache Kafka, with ML-driven direction predictions, A/B testing between champion/challenger models, drift detection, and live Grafana dashboards.',
     tech: ['Kafka', 'MLflow', 'InfluxDB', 'Docker'],
     span: 'col-span-1 row-span-1',
-    github: 'https://github.com/gana36/CryptoStreamML',
+    github: 'https://github.com/sgakula/CryptoStreamML',
     imageURL: "https://portfolioimagesforgana.s3.us-east-1.amazonaws.com/cryptostreamML.png",
     readmeRepo: 'CryptoStreamML',
   }
@@ -296,7 +296,7 @@ ${project.youtube ? `- Demo video: ${project.youtube}` : ''}
 Answer questions about this project only. Keep answers short (2-4 sentences).`;
 
       const model = new GoogleGenerativeAI(_apiKey).getGenerativeModel({
-        model: 'gemini-2.0-flash',
+        model: 'gemini-3-flash-preview',
         systemInstruction: systemPrompt,
       });
       chatRef.current = model.startChat({ history: [] });
@@ -407,7 +407,7 @@ function ProjectPanel({ project, onClose }: { project: Project; onClose: () => v
       for (const branch of ['main', 'master']) {
         try {
           const r = await fetch(
-            `https://raw.githubusercontent.com/${project.readmeOwner ?? 'gana36'}/${project.readmeRepo}/${branch}/README.md`,
+            `https://raw.githubusercontent.com/${project.readmeOwner ?? 'sgakula'}/${project.readmeRepo}/${branch}/README.md`,
           );
           if (r.ok) {
             setReadme(await r.text());

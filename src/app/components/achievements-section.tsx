@@ -38,7 +38,7 @@ const hackathons = [
     prize: 'Agentic Workflow Prize 1',
     date: '2025',
     participants: '',
-    link: 'https://github.com/gana36/case-twin',
+    link: 'https://github.com/sgakula/case-twin',
     color: '#20BEFF',
   },
 ];
