@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { GitBranch, Star, GitPullRequest, BookOpen, Users } from 'lucide-react';
 
-const USERNAME = 'gana36';
+const USERNAME = 'sgakula';
 
 // ── colour helpers ────────────────────────────────────────────────────────────
 

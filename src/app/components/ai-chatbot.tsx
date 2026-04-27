@@ -7,7 +7,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const RESUME_CONTEXT = `
 SAI GANESH AKULA
-saiganeshakagana@gmail.com | +1 (448) 200-9009 | linkedin.com/in/saiganeshakula/ | github.com/gana36 | Tallahassee, FL (open to Relocate)
+saiganeshakagana@gmail.com | +1 (448) 200-9009 | linkedin.com/in/saiganeshakula/ | github.com/sgakula | Tallahassee, FL (open to Relocate)
 
 EDUCATION
 Florida State University – Master of Science in Data Science (August 2023 – May 2025)
@@ -47,42 +47,42 @@ PROJECTS
 Procheck — Full-stack medical protocol search (React/TypeScript, FastAPI, Firebase, Elasticsearch, Gemini)
 - Hybrid AI search: Elasticsearch BM25 + Gemini semantic vectors (RRF ranking)
 - LLM query enhancement, intent classification (8 medical categories), citation tracking
-- Live: https://procheck-473021.web.app/ | GitHub: github.com/gana36/procheck
+- Live: https://procheck-473021.web.app/ | GitHub: github.com/sgakula/procheck
 
 Flight Price Estimation — MLOps pipeline (Random Forest, XGBoost, LightGBM, FastAPI, Docker, AWS ECS)
 - R² 0.9838, MAE ₹1559, RMSE ₹2891 on 300K+ records; <50ms inference
 - DVC + MLflow + Prometheus + Grafana + Evidently AI monitoring; ~$18/month AWS cost
-- GitHub: github.com/gana36/flight-price-estimation
+- GitHub: github.com/sgakula/flight-price-estimation
 
 Manus — Voice assistant (Gemini 2.0, FastAPI, React, Qdrant, Firebase)
 - 99.9% uptime; intent classification <150ms (down from 800ms)
 - Qdrant vector memory, WebSocket real-time sync, Calendar/Gmail/Fitbit ETL pipelines
-- GitHub: github.com/gana36/Jarvis
+- GitHub: github.com/sgakula/Jarvis
 
 YELP (Democratic Voting) — Group restaurant decisions (React 19, TypeScript, Gemini 2.0, Yelp Fusion, AWS)
 - Multimodal AI: voice transcription, image recognition, NLP via Gemini 2.0
 - Real-time Firestore sync, room-based voting, AWS ECS + Amplify deployment
-- GitHub: github.com/gana36/YELPB
+- GitHub: github.com/sgakula/YELPB
 
 Rift Rewind — League of Legends AI coach (React 18, FastAPI, Bedrock, DynamoDB, MongoDB)
 - Amazon Bedrock Claude 3 Sonnet; 70% reduction in manual analysis time, 90%+ pattern recognition
 - 100+ matches/player, <2s load, 85% cache optimization
-- GitHub: github.com/gana36/LeagueOfLegends_AICoach
+- GitHub: github.com/sgakula/LeagueOfLegends_AICoach
 
 Taxi Weather Analytics — ETL pipeline (Airflow, Docker, PostgreSQL, Power BI)
 - 1.4M+ NYC taxi records; MAE 3.5 min trip duration prediction
 - Open-Meteo weather API integration; Power BI dashboard
-- GitHub: github.com/gana36/taxi-weather-analytics
+- GitHub: github.com/sgakula/taxi-weather-analytics
 
 CryptoStreamML — Real-time crypto prediction (Kafka, Spark, InfluxDB, MLflow, Docker)
 - 150ms latency, 21 technical indicators (RSI, MACD, Bollinger Bands)
 - A/B testing 80/20 split; Evidently AI drift detection auto-retraining
-- GitHub: github.com/gana36/CryptoStreamML
+- GitHub: github.com/sgakula/CryptoStreamML
 
 VidMod — Autonomous video compliance agent (Gemini 3.0, FastAPI, React, FFmpeg, Cloud Run)
 - Full-video temporal reasoning via 1M+ token context
 - 5 remediation actions: blur, pixelate, replace (Runway Gen-4), dub (ElevenLabs), beep
-- Demo: youtu.be/Yl4bevvtUls | GitHub: github.com/gana36/VidMod
+- Demo: youtu.be/Yl4bevvtUls | GitHub: github.com/sgakula/VidMod
 
 RESEARCH PUBLICATION
 Title: "Tabular Embeddings for Tables with Bi-Dimensional Hierarchical Metadata and Nesting"
@@ -121,7 +121,7 @@ ${RESUME_CONTEXT}`;
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 const geminiModel = apiKey
   ? new GoogleGenerativeAI(apiKey).getGenerativeModel({
-      model: 'gemini-2.0-flash',
+      model: 'gemini-3-flash-preview',
       systemInstruction: SYSTEM_PROMPT,
     })
   : null;
